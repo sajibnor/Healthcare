@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">স্বাস্থ্য সেবা</string>
+    <string name="title_activity_pharmacy_maps">Map</string>
+    <string name="title_activity_user_maps">Map</string>
+</resources>

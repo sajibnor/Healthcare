@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sliders"
+    tools:context=".activities.SliderActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="8dp"
+        app:ci_drawable="@drawable/black"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+  <ImageView
+       android:id="@+id/arrowImageID"
+       android:visibility="gone"
+       android:layout_width="60dp"
+       android:layout_height="60dp"
+      android:padding="10dp"
+       android:layout_marginRight="15dp"
+       android:layout_marginBottom="3dp"
+      android:background="@drawable/button_next"
+       android:layout_gravity="bottom|end"
+       android:src="@drawable/right_arrow"/>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

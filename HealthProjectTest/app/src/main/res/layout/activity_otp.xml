@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/otp_bg"
+    tools:context=".activities.OtpActivity">
+
+
+    <TextView
+        android:text="OTP Verification"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_alignParentTop="true"
+        app:civ_border_color="#33DA92"
+        app:civ_border_width="3dp" />
+
+    <LinearLayout
+        android:id="@+id/otpID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="3">
+
+        <com.hbb20.CountryCodePicker
+
+            android:id="@+id/ccp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/text_bg"
+            app:ccp_defaultNameCode="BD" />
+
+        <EditText
+            android:id="@+id/editPhoneTextID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:hint="ফোন নাম্বার">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirmBTNID"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otpID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/text_bg"
+        android:textSize="17sp"
+        android:textColor="#FFF"
+        android:padding="10dp"
+        android:text="এগিয়ে যান" />
+
+    <EditText
+        android:id="@+id/editPinTextID"
+        android:layout_width="250dp"
+        android:layout_below="@id/otpID"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:drawableTint="#605757"
+        android:drawableLeft="@drawable/edit_status"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="পিন নাম্বার"/>
+
+    <Button
+        android:id="@+id/verifyBtnId"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPinTextID"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+android:visibility="gone"
+        android:background="@drawable/text_bg"
+        android:textColor="#FFF"
+        android:padding="10dp"
+        android:text="নিশ্চিত করুন" />
+
+
+</RelativeLayout>

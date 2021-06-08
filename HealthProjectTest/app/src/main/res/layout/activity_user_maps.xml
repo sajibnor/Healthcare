@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".map_activities.UserMapsActivity"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/callPharmaId"
+        android:background="#9200BCD4"
+        android:text="Call Now"
+        android:visibility="gone"
+        android:textColor="#FFF"
+        android:layout_above="@+id/instantPharmaServiceID"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_margin="10dp"
+        android:text="get instance help"
+        android:id="@+id/instantPharmaServiceID"
+        android:textColor="#FFF"
+        android:background="#A6222329"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <fragment
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</RelativeLayout>
